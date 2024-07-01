@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{0664E3CB-6C7D-45D5-9A12-B67B5CC05A8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{FB3570A5-536A-4BCD-99BC-93E7C02EC3E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{FB3570A5-536A-4BCD-99BC-93E7C02EC3E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{A58A4FCC-7C00-4AED-B2A1-EC46577A68CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{D9D866B5-0F65-43E4-8B05-451327E9186A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{D9D866B5-0F65-43E4-8B05-451327E9186A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks.Messaging", "BuildingBlocks\BuildingBlocks.Messaging\BuildingBlocks.Messaging.csproj", "{DD311FD4-1225-4FC1-B751-831C0C8FBAE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks.Messaging", "BuildingBlocks\BuildingBlocks.Messaging\BuildingBlocks.Messaging.csproj", "{DD311FD4-1225-4FC1-B751-831C0C8FBAE7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2AC23C4B-73C2-478C-A2D2-9351BE3A5B3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DD311FD4-1225-4FC1-B751-831C0C8FBAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD311FD4-1225-4FC1-B751-831C0C8FBAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD311FD4-1225-4FC1-B751-831C0C8FBAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC23C4B-73C2-478C-A2D2-9351BE3A5B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC23C4B-73C2-478C-A2D2-9351BE3A5B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC23C4B-73C2-478C-A2D2-9351BE3A5B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC23C4B-73C2-478C-A2D2-9351BE3A5B3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,14 +1,9 @@
-﻿using Carter;
-using Catalog.API.Models;
-using Mapster;
-using MediatR;
-
-namespace Catalog.API.Products.GetProductByCategory;
+﻿namespace Catalog.API.Products.GetProductByCategory;
 
 //public record GetProductByCategoryEndpointRequest(string Category);
 public record GetProductByCategoryResponse(IEnumerable<Product>  Products);
 
-internal class GetProductByCategoryEndpoint : ICarterModule
+public class GetProductByCategoryEndpoint : ICarterModule
 {
 
     public void AddRoutes(IEndpointRouteBuilder app)
