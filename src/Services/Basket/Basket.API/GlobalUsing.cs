@@ -11,3 +11,12 @@ global using Marten;
 global using Basket.API.Data;
 global using BuildingBlocks.Exceptions.Handler;
 global using Basket.API.DTOs;
+global using BuildingBlocks.Messaging.Events;
+global using MassTransit;
+global using Discount.Grpc;
+global using Microsoft.Extensions.Caching.Distributed;
+global using System.Text.Json;
+global using HealthChecks.UI.Client;
+global using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+global using static Discount.Grpc.DiscountProtoService;
+
