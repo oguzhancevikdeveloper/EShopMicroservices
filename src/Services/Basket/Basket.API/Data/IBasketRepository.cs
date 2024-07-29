@@ -1,6 +1,4 @@
-﻿using Basket.API.Models;
-
-namespace Basket.API.Data;
+﻿namespace Basket.API.Data;
 
 public interface IBasketRepository
 {

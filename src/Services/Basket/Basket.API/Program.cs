@@ -1,11 +1,6 @@
-using Discount.Grpc;
-using HealthChecks.UI.Client;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using static Discount.Grpc.DiscountProtoService;
-
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 var assembly = typeof(Program).Assembly;
 builder.Services.AddCarter();
 builder.Services.AddMediatR(config =>
@@ -27,12 +22,11 @@ builder.Services.Decorate<IBasketRepository, CachedBasketRepository>();
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration.GetConnectionString("Redis");
-    //options.InstanceName = "Basket";
+    options.InstanceName = "Basket";
 });
 
 
-//Grpc Services
-builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(options =>
+builder.Services.AddGrpcClient<DiscountProtoServiceClient>(options =>
 {
     options.Address = new Uri(builder.Configuration["GrpcSettings:DiscountUrl"]!);
 })
