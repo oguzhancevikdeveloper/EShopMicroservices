@@ -1,5 +1,3 @@
-using static Discount.Grpc.DiscountProtoService;
-
 var builder = WebApplication.CreateBuilder(args);
 
 
