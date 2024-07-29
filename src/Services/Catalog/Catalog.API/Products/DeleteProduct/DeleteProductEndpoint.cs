@@ -1,18 +1,14 @@
-﻿using Carter;
-using Mapster;
-using MediatR;
+﻿namespace Catalog.API.Products.DeleteProduct;
 
-namespace Catalog.API.Products.DeleteProduct;
-
-//public record DeleteProductRequest(Guid Id);
+public record DeleteProductRequest(Guid Id);
 public record DeleteProductResponse(bool IsSuccess);
 public class DeleteProductEndpoint : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapDelete("/products/{id}", async (Guid Id, ISender sender) =>
+        app.MapDelete("/products/{id}", async (DeleteProductRequest request, ISender sender) =>
         {
-            var result = await sender.Send(new DeleteProductCommand(Id));
+            var result = await sender.Send(new DeleteProductCommand(request.Id));
 
             var response = result.Adapt<DeleteProductResponse>();
 
